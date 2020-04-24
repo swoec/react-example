@@ -9,7 +9,7 @@ describe('CommentListItem', () => {
 
         const comments = getMockComment();
         const wrapper = render(<CommentListItem repo={comments}/>);
-        const timeEl = wrapper.find('a');
+        const timeEl = wrapper.find('strong');
         expect(timeEl).to.not.equal(null);
     });
 });

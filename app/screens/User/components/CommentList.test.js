@@ -7,7 +7,7 @@ import CommentList from './CommentList';
 describe('CommentList', () => {
     it('should render no comment by default', () => {
         const wrapper = mountComponent();
-        expect(wrapper.find('a')).to.have.length(0);
+        expect(wrapper.find('strong')).to.have.length(0);
     });
 
     it('should invoke the getComments method ', () => {
