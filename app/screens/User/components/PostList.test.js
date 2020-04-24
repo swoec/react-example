@@ -18,11 +18,11 @@ describe('PostList', () => {
     });
 
     it('should list the posts', done => {
-        const totalRepos = 3;
+        const totalRepos = 6;
         const getReposSpy = getGetPostSpy(getMockPosts(totalRepos));
         const wrapper = mountComponent({getPosts: getReposSpy});
         setTimeout(() => {
-            expect(wrapper.find('li')).to.have.length(totalRepos);
+            expect(wrapper.find('li')).to.have.length(totalRepos*2);
             done();
         });
     });

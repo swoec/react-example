@@ -39,6 +39,5 @@ CommentList.propTypes = {
 CommentList.defaultProps = {getComments};
 
 function renderComments(comments) {
-    console.log(comments);
     return comments.map(comment => <CommentListItem key={comment.id} comments={comment}/>);
 }
